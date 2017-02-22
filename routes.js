@@ -1,4 +1,6 @@
-//app = require('express')
-module.exports = function(req,res){
-    res.end('hello route 1')
-}
+app = require('express')
+
+//app.use('/jonas',require('./jonas/jonas.js'))
+app.use('/',require('./root.js') )
+
+
