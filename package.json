@@ -1,0 +1,23 @@
+{
+  "name": "helloroute",
+  "version": "1.0.0",
+  "description": "gitwars with express routing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jonasalmeida@github.com/SBU-BMI/helloRoute.git"
+  },
+  "author": "Jonas Almeida <jalmeida@mathbiol.org> (http://jonasalmeida.info)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SBU-BMI/helloRoute/issues"
+  },
+  "homepage": "https://github.com/SBU-BMI/helloRoute#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
