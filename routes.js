@@ -4,7 +4,7 @@ module.exports = function(app) {
 
 
     app.use('/paul', require('./collabs/paul/paul.js'));
-    
+    app.use('/kimon', require('./collabs/kimon/kimon.js'));
     app.use('/', require('./root.js'));
   
   app.use('/wade',require('./wade.js') )
