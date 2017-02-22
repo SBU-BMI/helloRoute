@@ -1,8 +1,11 @@
-app = require('express')
+module.exports = function(app) {
+    //add the folders for each person here
+    app.use('/jonas', require('./collabs/jonas/jonas.js'));
 
-//app.use('/jonas',require('./jonas/jonas.js'))
-//app.use('/hasit',require('./hasit/hasit.js'))
-app.use('/',require('./root.js') )
 
-app.use('/wade',require('./wade.js') )
-
+    app.use('/paul', require('./collabs/paul/paul.js'));
+    
+    app.use('/', require('./root.js'));
+  
+  app.use('/wade',require('./wade.js') )
+}
