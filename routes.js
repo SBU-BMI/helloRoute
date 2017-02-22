@@ -4,4 +4,5 @@ app = require('express')
 //app.use('/hasit',require('./hasit/hasit.js'))
 app.use('/',require('./root.js') )
 
+app.use('/wade',require('./wade.js') )
 
