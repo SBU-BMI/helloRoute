@@ -8,7 +8,7 @@ module.exports = function(req,res){
     h += '<br>&nbsp;&nbsp;&nbsp; <a href="https://helloroute.herokuapp.com/wade" target="_blank">https://helloroute.herokuapp.com/wade</a>,'
     h += '<br>&nbsp;&nbsp;&nbsp; <a href="https://helloroute.herokuapp.com/paul" target="_blank">https://helloroute.herokuapp.com/paul</a>,'
     h += '<br>&nbsp;&nbsp;&nbsp; <a href="https://helloroute.herokuapp.com/eileen" target="_blank">https://helloroute.herokuapp.com/eileen</a>,'
-    '<br>&nbsp;&nbsp;&nbsp; etc ...'
+    h += '<br>&nbsp;&nbsp;&nbsp; etc ...'
     h += '</p>'
     h += '</div>'
     res.send(h)
