@@ -1,6 +1,17 @@
 module.exports = function(app) {
+    // creating a try/catch function for use
+    var safeUse = function(route,path){
+        try{
+            app.use(route, require(path));
+        } catch (ex){
+            app.use(route, function(req,res){
+                res.end('error found:',ex.message)
+            });
+        }
+    }
     //add the folders for each person here
     app.use('/jonas', require('./collabs/jonas/jonas.js'));
+    //safeUse('/jonas', './collabs/jonas/jonas.js');
 
     app.use('/wade', require('./collabs/wade/wade.js'));
 
